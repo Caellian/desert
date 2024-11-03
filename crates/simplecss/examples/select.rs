@@ -1,3 +1,5 @@
+use desert_simplecss as simplecss;
+
 struct XmlNode<'a, 'input: 'a>(roxmltree::Node<'a, 'input>);
 
 impl<'a, 'input: 'a> XmlNode<'a, 'input> {

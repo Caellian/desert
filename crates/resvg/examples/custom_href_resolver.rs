@@ -1,3 +1,5 @@
+use desert as resvg;
+
 fn main() {
     let mut opt = usvg::Options::default();
 

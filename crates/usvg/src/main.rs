@@ -10,6 +10,8 @@ use std::sync::Arc;
 
 use pico_args::Arguments;
 
+use desert_usvg as usvg;
+
 const HELP: &str = "\
 usvg (micro SVG) is an SVG simplification tool.
 

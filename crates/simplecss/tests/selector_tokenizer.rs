@@ -1,4 +1,4 @@
-use simplecss::*;
+use desert_simplecss::*;
 
 macro_rules! tokenize {
     ($name:ident, $text:expr, $( $token:expr ),*) => (

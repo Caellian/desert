@@ -4,6 +4,8 @@
 
 #![allow(clippy::uninlined_format_args)]
 
+use desert as resvg;
+
 use std::path;
 use std::sync::Arc;
 

@@ -1,5 +1,5 @@
 [package]
-name = "usvg"
+name = "desert-usvg"
 version = "0.44.0"
 authors = ["Yevhenii Reizner <razrfalcon@gmail.com>"]
 keywords = ["svg"]
@@ -14,7 +14,7 @@ exclude = ["tests"]
 workspace = "../.."
 
 [[bin]]
-name = "usvg"
+name = "desert-usvg"
 required-features = ["text", "system-fonts", "memmap-fonts"]
 
 [dependencies]
@@ -22,7 +22,7 @@ base64 = "0.22" # for embedded images
 log = "0.4"
 pico-args = { version = "0.5", features = ["eq-separator"] }
 strict-num = "0.1.1"
-svgtypes = { path = "../svgtypes" }
+svgtypes = { path = "../svgtypes", package = "desert-svgtypes" }
 tiny-skia-path = "0.11.4"
 xmlwriter = "0.1"
 
@@ -32,7 +32,7 @@ flate2 = { version = "1.0", default-features = false, features = ["rust_backend"
 imagesize = "0.13" # raster images size detection
 kurbo = "0.11" # Bezier curves utils
 roxmltree = "0.20"
-simplecss = { path = "../simplecss" }
+simplecss = { path = "../simplecss", package = "desert-simplecss" }
 siphasher = "1.0" # perfect hash implementation
 
 # text

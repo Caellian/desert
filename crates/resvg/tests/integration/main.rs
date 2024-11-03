@@ -1,3 +1,5 @@
+use desert as resvg;
+
 use once_cell::sync::Lazy;
 use rgb::{FromSlice, RGBA8};
 use std::path::Path;

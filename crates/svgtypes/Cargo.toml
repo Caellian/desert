@@ -1,5 +1,5 @@
 [package]
-name = "svgtypes"
+name = "desert-svgtypes"
 version = "0.15.2"
 authors = ["Yevhenii Reizner <razrfalcon@gmail.com>"]
 categories = ["parser-implementations"]
@@ -11,6 +11,7 @@ edition = "2018"
 readme = "README.md"
 repository = "https://github.com/RazrFalcon/svgtypes"
 exclude = ["benches/", "codegen/", "fuzz/"]
+workspace = "../.."
 
 [dependencies]
 siphasher = "1.0" # perfect hash implementation for color names

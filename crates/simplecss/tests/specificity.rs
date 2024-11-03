@@ -1,4 +1,4 @@
-use simplecss::*;
+use desert_simplecss::*;
 
 #[test]
 fn spec_01() {

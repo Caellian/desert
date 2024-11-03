@@ -24,6 +24,6 @@ fn main() {
         std::fs::read_to_string(&args[1]).unwrap()
     };
 
-    let style = simplecss::StyleSheet::parse(&text);
+    let style = desert_simplecss::StyleSheet::parse(&text);
     println!("{:#?}", style);
 }

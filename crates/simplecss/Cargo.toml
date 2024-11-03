@@ -1,5 +1,5 @@
 [package]
-name = "simplecss"
+name = "desert-simplecss"
 version = "0.2.1"
 authors = ["Reizner Evgeniy <razrfalcon@gmail.com>"]
 license = "MIT/Apache-2.0"
@@ -10,6 +10,7 @@ keywords = ["css", "parser", "selector"]
 categories = ["parser-implementations"]
 edition = "2018"
 exclude = ["testing-tools/**"]
+workspace = "../.."
 
 [dependencies]
 log = "0.4.8"

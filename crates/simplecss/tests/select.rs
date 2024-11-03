@@ -1,4 +1,4 @@
-use simplecss::*;
+use desert_simplecss::*;
 
 struct XmlNode<'a, 'input: 'a>(roxmltree::Node<'a, 'input>);
 
@@ -16,7 +16,7 @@ impl<'a, 'input: 'a> XmlNode<'a, 'input> {
     }
 }
 
-impl simplecss::Element for XmlNode<'_, '_> {
+impl desert_simplecss::Element for XmlNode<'_, '_> {
     fn parent_element(&self) -> Option<Self> {
         self.0.parent_element().map(XmlNode)
     }

@@ -87,6 +87,74 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5c297a1c74b71ae29df00c3e22dd9534821d60eb9af5a0192823fa2acea70c2a"
 
 [[package]]
+name = "desert"
+version = "0.44.0"
+dependencies = [
+ "desert-svgtypes",
+ "desert-usvg",
+ "gif",
+ "image-webp",
+ "log",
+ "once_cell",
+ "pico-args",
+ "png",
+ "rgb",
+ "tiny-skia",
+ "zune-jpeg",
+]
+
+[[package]]
+name = "desert-capi"
+version = "0.44.0"
+dependencies = [
+ "desert",
+ "log",
+]
+
+[[package]]
+name = "desert-simplecss"
+version = "0.2.1"
+dependencies = [
+ "env_logger",
+ "log",
+ "roxmltree 0.7.3",
+]
+
+[[package]]
+name = "desert-svgtypes"
+version = "0.15.2"
+dependencies = [
+ "kurbo",
+ "siphasher",
+]
+
+[[package]]
+name = "desert-usvg"
+version = "0.44.0"
+dependencies = [
+ "base64",
+ "data-url",
+ "desert-simplecss",
+ "desert-svgtypes",
+ "flate2",
+ "fontdb",
+ "imagesize",
+ "kurbo",
+ "log",
+ "once_cell",
+ "pico-args",
+ "roxmltree 0.20.0",
+ "rustybuzz",
+ "siphasher",
+ "strict-num",
+ "tiny-skia-path",
+ "unicode-bidi",
+ "unicode-script",
+ "unicode-vo",
+ "xmlwriter",
+]
+
+[[package]]
 name = "env_logger"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -248,31 +316,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a993555f31e5a609f617c12db6250dedcac1b0a85076912c436e6fc9b2c8e6a3"
 
 [[package]]
-name = "resvg"
-version = "0.44.0"
-dependencies = [
- "gif",
- "image-webp",
- "log",
- "once_cell",
- "pico-args",
- "png",
- "rgb",
- "svgtypes",
- "tiny-skia",
- "usvg",
- "zune-jpeg",
-]
-
-[[package]]
-name = "resvg-capi"
-version = "0.44.0"
-dependencies = [
- "log",
- "resvg",
-]
-
-[[package]]
 name = "rgb"
 version = "0.8.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -321,15 +364,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d66dc143e6b11c1eddc06d5c423cfc97062865baf299914ab64caa38182078fe"
 
 [[package]]
-name = "simplecss"
-version = "0.2.1"
-dependencies = [
- "env_logger",
- "log",
- "roxmltree 0.7.3",
-]
-
-[[package]]
 name = "siphasher"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -357,14 +391,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6637bab7722d379c8b41ba849228d680cc12d0a45ba1fa2b48f2a30577a06731"
 dependencies = [
  "float-cmp",
-]
-
-[[package]]
-name = "svgtypes"
-version = "0.15.2"
-dependencies = [
- "kurbo",
- "siphasher",
 ]
 
 [[package]]
@@ -452,32 +478,6 @@ name = "unicode-vo"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b1d386ff53b415b7fe27b50bb44679e2cc4660272694b7b6f3326d8480823a94"
-
-[[package]]
-name = "usvg"
-version = "0.44.0"
-dependencies = [
- "base64",
- "data-url",
- "flate2",
- "fontdb",
- "imagesize",
- "kurbo",
- "log",
- "once_cell",
- "pico-args",
- "roxmltree 0.20.0",
- "rustybuzz",
- "simplecss",
- "siphasher",
- "strict-num",
- "svgtypes",
- "tiny-skia-path",
- "unicode-bidi",
- "unicode-script",
- "unicode-vo",
- "xmlwriter",
-]
 
 [[package]]
 name = "version_check"

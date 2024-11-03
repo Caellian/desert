@@ -1,3 +1,5 @@
+use desert_usvg as usvg;
+
 use usvg::Color;
 
 #[test]
