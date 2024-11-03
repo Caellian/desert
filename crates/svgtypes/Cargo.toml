@@ -12,9 +12,6 @@ readme = "README.md"
 repository = "https://github.com/RazrFalcon/svgtypes"
 exclude = ["benches/", "codegen/", "fuzz/"]
 
-[workspace]
-members = ["benches"]
-
 [dependencies]
 siphasher = "1.0" # perfect hash implementation for color names
 kurbo = "0.11" # ArcTo to CurveTo(s)
